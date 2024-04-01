@@ -1,5 +1,5 @@
 
-#! Generates two time series data files
+#! Generates two time series data files (used for the graphs in the Proposal)
 
 import numpy as np
 import pandas as pd
@@ -48,8 +48,8 @@ def main():
     df_drifter1 = pd.DataFrame({'value_column': time_series_drifter1})
     df_drifter2_shifted = pd.DataFrame({'value_column': time_series_drifter2_shifted_with_noise})
 
-    df_drifter1.to_csv('./data/simdata1.csv', index=False)
-    df_drifter2_shifted.to_csv('./data/simdata2.csv', index=False)
+    df_drifter1.to_csv('../data/simdata1.csv', index=False)
+    df_drifter2_shifted.to_csv('../data/simdata2.csv', index=False)
 
 if __name__ == "__main__":
     main()

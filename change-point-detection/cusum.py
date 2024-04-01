@@ -26,7 +26,7 @@ def detect_change_points(data, method, threshold=1.0):
     return result
 
 # Read CSV file
-df = pd.read_csv('./data/rtd.csv')
+df = pd.read_csv('../data/rtd.csv')
 
 # Extract 'WLEV' column
 wlev_data = df['RTD'].values

@@ -12,8 +12,8 @@ def calculate_dtw_distance(series1, series2):
 
 def main():
     # Replace 'path_to_file1.csv' and 'path_to_file2.csv' with your actual file paths
-    file_path1 = './data/simdata1.csv'
-    file_path2 = './data/simdata2.csv'
+    file_path1 = '../data/simdata1.csv'
+    file_path2 = '../data/simdata2.csv'
 
     # Read time series data from CSV files
     time_series1 = read_csv(file_path1)['value_column'].values

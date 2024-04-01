@@ -7,7 +7,7 @@ from statsmodels.nonparametric.smoothers_lowess import lowess
 from scipy.signal import savgol_filter
 
 # Read the CSV file with a column representing the timestamp (assuming it's named 'TIMESTAMP')
-df = pd.read_csv('./data/wlev.csv')
+df = pd.read_csv('../data/wlev.csv')
 
 # Extract the time series column (assuming it's named 'WLEV')
 time_series = df['WLEV']
@@ -46,8 +46,8 @@ plt.show()
 
 # Save the smoothed_savgol to a CSV file
 smoothed_savgol_df = pd.DataFrame({'TIMESTAMP': time_series.index, 'WLEV': smoothed_savgol})
-smoothed_savgol_df.to_csv('./data/wlev-savgol.csv', index=False)
+smoothed_savgol_df.to_csv('../data/wlev-savgol.csv', index=False)
 
 # Save the smoothed_lowess to a CSV file
 smoothed_lowess_df = pd.DataFrame({'TIMESTAMP': time_series.index, 'WLEV': smoothed_lowess})
-smoothed_lowess_df.to_csv('./data/wlev-lowess.csv', index=False)
+smoothed_lowess_df.to_csv('../data/wlev-lowess.csv', index=False)

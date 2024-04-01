@@ -21,7 +21,7 @@ def adf_test(time_series):
         print("Fail to reject the null hypothesis: The time series may be non-stationary.")
 
 # Read the CSV file
-df = pd.read_csv('./data/wlev.csv')
+df = pd.read_csv('../data/wlev.csv')
 
 # Extract the time series column (assuming it's named 'value')
 time_series = df['WLEV']

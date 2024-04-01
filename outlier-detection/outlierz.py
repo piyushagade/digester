@@ -11,7 +11,7 @@ def detect_outliers_zscore(data, threshold=3):
     return np.where(z_scores > threshold)[0]
 
 # Read CSV data
-file_path = './data/simdata2outliers.csv'
+file_path = '../data/simdata2outliers.csv'
 df = pd.read_csv(file_path)
 
 # Select the column with numeric data for outlier detection

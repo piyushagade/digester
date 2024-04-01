@@ -13,7 +13,7 @@ def detect_outliers_iqr(data, k=1.5):
     return np.where((data < lower_bound) | (data > upper_bound))[0], (q25, q75), (lower_bound, upper_bound)
 
 # Read CSV file
-file_path = './data/simdata2outliers.csv'
+file_path = '../data/simdata2outliers.csv'
 df = pd.read_csv(file_path)
 
 # Select the column with numeric data for outlier detection

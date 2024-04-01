@@ -27,8 +27,8 @@ def calculate_cross_correlation(series1, series2):
 def main():
 
     # Read CSV data
-    file_path1 = './data/simdata1.csv'
-    file_path2 = './data/simdata2.csv'
+    file_path1 = '../data/simdata1.csv'
+    file_path2 = '../data/simdata2.csv'
 
     # Read time series data from CSV files
     time_series1 = read_csv(file_path1)['value_column'].values

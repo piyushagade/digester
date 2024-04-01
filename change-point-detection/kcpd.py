@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import ruptures as rpt
 
 # Read CSV file
-df = pd.read_csv('./data/wlev.csv')
+df = pd.read_csv('../data/wlev.csv')
 
 # Extract 'WLEV' column
 wlev_data = df['WLEV'].values

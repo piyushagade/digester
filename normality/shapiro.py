@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import shapiro, probplot
 
 # Read CSV file
-df = pd.read_csv('./data/wlev.csv')
+df = pd.read_csv('../data/wlev.csv')
 
 # Extract 'WLEV' column
 wlev_data = df['WLEV'].dropna()  # Drop any NaN values

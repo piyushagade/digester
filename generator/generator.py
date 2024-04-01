@@ -21,6 +21,6 @@ change_points = [(30, -3), (60, +5), (180, 8), (270, -5)]  # Example: Two tribut
 water_temperature_df = simulate_water_temperature(num_points=500, change_points=change_points)
 
 # Save the generated data to a CSV file
-water_temperature_df.to_csv("rtd.csv", index=False)
+water_temperature_df.to_csv("../data/rtd.csv", index=False)
 
-print("CSV file './data/rtd.csv' generated successfully.")
+print("CSV file '../data/rtd.csv' generated successfully.")
